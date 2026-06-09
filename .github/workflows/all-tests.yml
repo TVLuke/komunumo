@@ -41,7 +41,7 @@ jobs:
         compression-level: 9
     - name: Upload coverage to Codecov
       if: github.repository_owner == 'komunumo'
-      uses: codecov/codecov-action@v6
+      uses: codecov/codecov-action@v7
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
     - name: Check clean git state
